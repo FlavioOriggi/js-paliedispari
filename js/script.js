@@ -35,12 +35,14 @@ function randomNumber(min, max){
 console.log(numeroPc);
 
 // Sommiamo i due numeri, stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione);
+var risultatoSomma = sommaNumeri(numeroUtente, numeroPc);
+
 function sommaNumeri(numeroUtente, numeroPc){
     var somma = numeroUtente + numeroPc;
     return somma;
 }
-var risultatoSomma = sommaNumeri(numeroUtente, numeroPc);
 console.log(risultatoSomma);
+
 
 function pariDispari(risultatoSomma){
     if(risultatoSomma % 2 == 0){
@@ -48,13 +50,20 @@ function pariDispari(risultatoSomma){
     }
     return false;
 }
+var risultatoGenere = pariDispari(risultatoSomma);
 
-var risultatoTipologia = pariDispari(risultatoSomma);
-
-if(risultatoTipologia){
-    console.log('pari');
-} else{
-    console.log('dispari');
-
+// Dichiariamo chi ha vinto
+if (risultatoGenere){   
+    if(risultatoGenere && scelta == 'pari'){
+        console.log('hai vinto');
+    } else{
+        console.log('hai perso');
+    }
+} else if (risultatoGenere == false && scelta == 'dispari'){
+        console.log('hai vinto');
+    } else{
+        console.log('hai perso');
 }
+
+
 
