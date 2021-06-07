@@ -22,7 +22,7 @@
 
 // scelta utente di tipologia e numero 
 var scelta = prompt('Scegli pari o dispari');
-var numeroUtente = prompt('Scrivi un numero da 1 a 5');
+var numeroUtente = parseInt(prompt('Scrivi un numero da 1 a 5'));
 console.log(scelta);
 console.log(numeroUtente);
 
@@ -33,3 +33,11 @@ function randomNumber(min, max){
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 console.log(numeroPc);
+
+// Sommiamo i due numeri, stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione);
+function sommaNumeri(numeroUtente, numeroPc){
+    var somma = numeroUtente + numeroPc;
+    return somma;
+}
+var risultatoSomma = sommaNumeri(numeroUtente, numeroPc);
+console.log(risultatoSomma);
