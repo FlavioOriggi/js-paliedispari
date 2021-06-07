@@ -13,7 +13,7 @@ console.log(arrayUtente);
 
 var parolaInvertita = invertiParola(parola);
 function invertiParola(parola){
-    for (var i=parola.length-1; i>=0; i--)parola.charAt(i)       
+    for (var i=parola.length-1; i>=0; i--)document.write(parola.charAt(i)); 
         
 }
 console.log(parolaInvertita);
