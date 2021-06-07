@@ -59,6 +59,4 @@ submit.addEventListener("click", function(){
         document.getElementById('esitoGara').innerHTML = 'Hai perso!';
         console.log('hai perso');
     }
-    
-
 });
