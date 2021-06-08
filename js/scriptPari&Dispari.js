@@ -30,18 +30,21 @@ submit.addEventListener("click", function(){
     var risultatoSomma = sommaNumeri(numeroUtente, numeroPc);
 
     function sommaNumeri(numeroUtente, numeroPc){
-        var somma = numeroUtente + numeroPc;
-        return somma;
+        return somma = numeroUtente + numeroPc;        
     }
     console.log(risultatoSomma);
 
     function pariDispari(risultatoSomma){
         if(risultatoSomma % 2 == 0){
+            console.log('la somma dei numeri e\' pari');
             return true;
         }
+        console.log('la somma dei numeri e\' dispari');
         return false;
     }
     var risultatoGenere = pariDispari(risultatoSomma);
+    
+
 
     // Dichiariamo chi ha vinto
     if (risultatoGenere){   
