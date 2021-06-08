@@ -47,14 +47,10 @@ submit.addEventListener("click", function(){
 
 
     // Dichiariamo chi ha vinto
-    if (risultatoGenere){   
-        if(risultatoGenere && scelta == 'pari'){
-            document.getElementById('esitoGara').innerHTML = 'Hai vinto';
-            console.log('hai vinto');
-        } else{
-            document.getElementById('esitoGara').innerHTML = 'Hai perso!';
-            console.log('hai perso');
-        }
+      
+    if(risultatoGenere && scelta == 'pari'){
+        document.getElementById('esitoGara').innerHTML = 'Hai vinto';
+        console.log('hai vinto');   
     } else if (risultatoGenere == false && scelta == 'dispari'){
         document.getElementById('esitoGara').innerHTML = 'Hai vinto';
         console.log('hai vinto');
