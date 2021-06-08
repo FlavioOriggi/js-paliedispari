@@ -51,7 +51,7 @@ submit.addEventListener("click", function(){
     if(risultatoGenere && scelta == 'pari'){
         document.getElementById('esitoGara').innerHTML = 'Hai vinto';
         console.log('hai vinto');   
-    } else if (risultatoGenere == false && scelta == 'dispari'){
+    } else if (risultatoGenere && scelta == 'dispari'){
         document.getElementById('esitoGara').innerHTML = 'Hai vinto';
         console.log('hai vinto');
     } else{
